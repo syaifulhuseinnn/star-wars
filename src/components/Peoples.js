@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Peoples({ peoples }) {
+  let id = 1;
   return (
     <div className="peoples p-5">
       {peoples.map((people, index) => (
@@ -17,9 +18,11 @@ export default function Peoples({ peoples }) {
             <h1 className="mb-2">{people.name}</h1>
             <h2 className="mb-2">Gender: {people.gender}</h2>
             <h2 className="mb-2">Birthday: {people.birth_year}</h2>
-            <button className="btn btn-warning text-uppercase text-light font-weight-bold my-3">
-              show me
-            </button>
+            <Link to={`/people/${id++}`}>
+              <button className="btn btn-warning text-uppercase text-light font-weight-bold my-3">
+                show me
+              </button>
+            </Link>
           </div>
         </div>
       ))}
