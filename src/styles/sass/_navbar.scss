@@ -1,0 +1,11 @@
+.nav {
+  &__appname h1 {
+    color: var(--primary);
+    font-size: 26px;
+  }
+
+  &__menuitem span {
+    font-size: 17px;
+    cursor: pointer;
+  }
+}

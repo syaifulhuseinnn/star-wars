@@ -1,0 +1,9 @@
+.hero {
+  &__starwars {
+    font-size: 60px;
+
+    & span {
+      color: var(--primary);
+    }
+  }
+}

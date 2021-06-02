@@ -1,0 +1,17 @@
+.movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin: 10px 20px;
+
+  &__item {
+    &__title h1 {
+      font-size: 20px;
+    }
+
+    &__title h2 {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+    }
+  }
+}
